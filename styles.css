@@ -360,6 +360,24 @@ header img {
 }
 
 @media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 0;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+    box-shadow: none;
+  }
   .about, #skills, #portfolio {
     padding: 10px 5vw;
   }
@@ -393,5 +411,8 @@ header img {
   .site-footer {
     font-size: 0.7em;
     padding: 8px 0;
+  }
+  .card img {
+    height: 90px;
   }
 }
