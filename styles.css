@@ -328,27 +328,45 @@ header img {
 
 @media (max-width: 900px) {
   nav {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
+    flex-direction: row;
+    height: 80px;
+    padding: 10px 0 10px 10px;
+    justify-content: center; 
+    align-items: center;
   }
   .logo {
-    margin-left: 0;
+    margin: 0;
     font-size: 2.2em;
+    text-align: center;
   }
   .nav-links {
-    margin-right: 0;
-    gap: 15px;
+    display: none; /* Hide by default */
   }
+
   header {
     flex-direction: column;
-    padding: 20px 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
     height: auto;
     gap: 10px;
   }
-  .about, #skills, #portfolio {
+
+  header blockquote {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #skills, #portfolio {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;
   }
   .portfolio {
     gap: 10px;
@@ -358,70 +376,30 @@ header img {
     max-width: 350px;
   }
   .dog-photo {
-    display: none !important;
+    width: 150px;          /* smaller size for phone */
+    right: -200px;         /* start closer, less offscreen */
+    bottom: 10px;          /* maybe move it slightly */
   }
+
+  .dog-photo.show {
+    right: 10px;           /* slide in, but stops 10px from screen edge */
+  }
+
+  .portfolio-video-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px 0;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    margin: 0;
-    align-items: flex-start;
-  }
-  .dropdown-content {
-    position: static;
-    min-width: 100%;
-    box-shadow: none;
-  }
-  .about, #skills, #portfolio {
-    padding: 10px 5vw;
-  }
-  header {
-    padding: 10px 5vw 30px 5vw;
-  }
-  .portfolio-video-wrapper video {
-    max-height: 30vh;
-  }
-  .skills {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-  .card {
-    width: 100%;
-    min-width: unset;
-  }
-  .dog-photo {
-    display: none;
-  }
-  h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 1.2em;
-  }
-  p, .card-title, .skill {
-    font-size: 1em;
-  }
-  .site-footer {
-    font-size: 0.7em;
-    padding: 8px 0;
-  }
-  .card img {
-    height: 90px;
-  }
-  header video {
-    width: 120px !important;
-    height: 120px !important;
-    display: block;
-    margin: 0 auto;
-  }
+.portfolio-video-wrapper video {
+  width: 200%;          
+  max-height: 70vh;     
+  display: block;
+  object-fit: cover;
+  position: relative;
+}
 }

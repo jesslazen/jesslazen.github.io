@@ -13,7 +13,7 @@
 
 <nav>
   <a href="#" class="logo">Jess Lazen</a>
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
     <div class="dropdown">
@@ -110,7 +110,7 @@
       <source src="assets/construction.mp4" type="video/mp4" />
     </video>
   </div>
-  <h2>Portfolio (Under Construction)</h2>
+  <h2>Portfolio</h2>
   <div class="portfolio">
     <a class="card" href="projects/project1.html">
       <img src="assets/project1.jpg" alt="Project 1"
@@ -143,5 +143,16 @@
 <footer class="site-footer">
   <p>&copy; 2025 Jessica Lazen. All rights reserved.</p>
 </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', function() {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', !expanded);
+    navLinks.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
