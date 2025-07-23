@@ -350,6 +350,14 @@ header img {
     gap: 10px;
   }
 
+  header video {
+  width: 250px;  
+  height: 250px;
+  object-fit: cover;  
+  border-radius: 8px;
+  flex-shrink: 0;   
+}
+
   header blockquote {
     font-size: 2em;
     text-align: center;
@@ -376,13 +384,14 @@ header img {
     max-width: 350px;
   }
   .dog-photo {
-    width: 150px;          /* smaller size for phone */
+    width: 150px;       
     right: -200px;         /* start closer, less offscreen */
-    bottom: 10px;          /* maybe move it slightly */
+    bottom: 10px;         
   }
 
   .dog-photo.show {
-    right: 10px;           /* slide in, but stops 10px from screen edge */
+    right: 10px;          
+    overflow: hidden;
   }
 
   .portfolio-video-wrapper {
