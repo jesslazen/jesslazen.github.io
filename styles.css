@@ -313,3 +313,85 @@ header img {
   font-size: 0.8em;
   margin-top: 0;
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .about, #skills, #portfolio {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .logo {
+    margin-left: 0;
+    font-size: 2.2em;
+  }
+  .nav-links {
+    margin-right: 0;
+    gap: 15px;
+  }
+  header {
+    flex-direction: column;
+    padding: 20px 20px 40px 20px;
+    height: auto;
+    gap: 10px;
+  }
+  .about, #skills, #portfolio {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio {
+    gap: 10px;
+  }
+  .card {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about, #skills, #portfolio {
+    padding: 10px 5vw;
+  }
+  header {
+    padding: 10px 5vw 30px 5vw;
+  }
+  .portfolio-video-wrapper video {
+    max-height: 30vh;
+  }
+  .skills {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .card {
+    width: 100%;
+    min-width: unset;
+  }
+  .dog-photo {
+    display: none;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p, .card-title, .skill {
+    font-size: 1em;
+  }
+  .site-footer {
+    font-size: 0.7em;
+    padding: 8px 0;
+  }
+}
