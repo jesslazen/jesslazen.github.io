@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jess Lazen Portfolio</title>
+  <!-- Adobe Fonts embed -->
+  <link rel="stylesheet" href="https://use.typekit.net/knk7fjl.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<nav>
+  <a href="#" class="logo">Jess Lazen</a>
+  <div class="nav-links">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <div class="dropdown">
+      <a href="#portfolio" class="dropbtn">Portfolio</a>
+      <div class="dropdown-content">
+        <a href="projects/project1.html">Project 1: A/B Testing</a>
+        <a href="projects/project2.html">Project 2: Propensity Score Matching</a>
+        <a href="projects/project3.html">Project 3: Dimensionality Reduction</a>
+        <a href="projects/project4.html">Project 4: Text Analysis</a>
+        <a href="projects/project5.html">Project 5: Out of Distribution Detection</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <video width="250" height="250" autoplay loop muted>
+    <source src="assets/me_flower.mp4" type="video/mp4">
+  </video>
+
+  <div class="intro">
+    <blockquote>Hi there! I’m Jess, a quantitative <br /> social science researcher.</blockquote>
+
+  <div class="contact-links">
+  <a href="mailto:jessica.lazen@gmail.com">jessica.lazen@gmail.com</a>
+  <a href="https://www.linkedin.com/in/jessica-stephenson1/" target="_blank">LinkedIn</a>
+  <a href="assets/Jess_Stephenson_Resume.pdf" target="_blank">Resume</a>
+  <a href="assets/Jess_Stephenson_CV.pdf" target="_blank">Curriculum Vitae</a>
+  </div>
+  </div>
+</header>
+
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I’m a Brooklyn-based social scientist with a background in cognitive science and psychology. I’m 
+    currently pursuing a master’s degree in NYU’s Applied Statistics for Social Science Research (A3SR) 
+    program, where I use advanced statistical and computational tools to answer socially impactful questions.
+    <br><br>
+    I have over 8 years of experience using quantitative and qualitative research methods, 
+    statistical modeling, and data visualization to explore how people think, act, and interact 
+    within social contexts. Working primarily in R, I explore topics including language and reasoning,
+    social categorization, and ethical, human-centered approaches to technology.
+    <br><br>
+    In my free time, I enjoy hosting dinner parties, taking technique-less dance classes, and 
+    after work trips to the dog park with my dog, 
+    <span class="margie-highlight" id="margie">Margie</span>.</p>
+
+  <!-- Dog photo -->
+<img src="assets/margie.png" alt="Margie the dog" class="dog-photo" id="dog-photo">
+
+<script>
+  const margie = document.getElementById('margie');
+  const photo = document.getElementById('dog-photo');
+
+  margie.addEventListener('mouseenter', () => {
+    photo.classList.add('show');
+  });
+</script>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Interview Research</div>
+    <div class="skill">Survey Design</div>
+    <div class="skill">Experimental Design (e.g., A/B Testing)</div>
+    <div class="skill">Cognitive Task Design</div>
+
+    <div class="skill">Data Cleaning & Wrangling</div>
+    <div class="skill">Exploratory Data Analysis</div>
+    <div class="skill">Causal Inference</div>
+    <div class="skill">Frequentist & Bayesian Inference</div>
+
+    <div class="skill">Predictive Modeling & Classification</div>
+    <div class="skill">Latent Variable Modeling</div>
+    <div class="skill">Clustering & Dimensionality Reduction</div>
+    <div class="skill">Text Analysis & NLP</div>
+    
+    <div class="skill">R</div>
+    <div class="skill">Stan</div>
+    <div class="skill">Adobe Creative Cloud</div>
+   
+    <div class="skill">Data Visualization</div>
+    <div class="skill">Research Communication</div>
+    <div class="skill">Ethical Research & IRB Compliance</div>
+    <div class="skill">Mentorship & Teaching</div>
+  </div>
+</section>
+
+  <section id="portfolio">
+  <div class="portfolio-video-wrapper">
+    <video autoplay muted loop playsinline>
+      <source src="assets/construction.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <h2>Portfolio (Under Construction)</h2>
+  <div class="portfolio">
+    <a class="card" href="projects/project1.html">
+      <img src="assets/project1.jpg" alt="Project 1"
+           onerror="this.onerror=null;this.src='assets/coming-soon.png';" />
+      <div class="card-title">Project 1: A/B Testing</div>
+    </a>
+    <a class="card" href="projects/project2.html">
+      <img src="assets/project2.jpg" alt="Project 2"
+           onerror="this.onerror=null;this.src='assets/coming-soon.png';" />
+      <div class="card-title">Project 2: Propensity Score Matching</div>
+    </a>
+    <a class="card" href="projects/project3.html">
+      <img src="assets/project3.jpg" alt="Project 3"
+           onerror="this.onerror=null;this.src='assets/coming-soon.png';" />
+      <div class="card-title">Project 3: Dimensionality Reduction</div>
+    </a>
+    <a class="card" href="projects/project4.html">
+      <img src="assets/project4.jpg" alt="Project 4"
+           onerror="this.onerror=null;this.src='assets/coming-soon.png';" />
+      <div class="card-title">Project 4: Text Analysis</div>
+    </a>
+    <a class="card" href="projects/project5.html">
+      <img src="assets/project5.jpg" alt="Project 5"
+           onerror="this.onerror=null;this.src='assets/coming-soon.png';" />
+      <div class="card-title">Project 5: Out of Distribution Detection</div>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Jessica Lazen. All rights reserved.</p>
+</footer>
+</body>
+</html>
