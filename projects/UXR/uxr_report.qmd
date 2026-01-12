@@ -1,0 +1,90 @@
+---
+title: "BabyChildTeen@NYU Participant Management System"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    smooth-scroll: true
+    embed-resources: false
+    title-block-banner: true
+---
+
+```{=html}
+<style>
+#TOC {
+  background: url("logo.png");
+  background-size: 80%;
+  padding-top: 200px !important;
+  background-repeat: no-repeat;
+}
+</style>
+```
+
+::::: columns
+::: {.column width="50%"}
+**Client**
+
+[BabyChildTeen\@NYU](https://www.babychildteenatnyu.com/)
+
+**Role**
+
+Research and Development Lead
+
+**Tools**
+
+-   Qualtrics
+
+-   Figma
+
+-   REDCap
+:::
+
+::: {.column width="50%"}
+**Methods**
+
+-   User and Stakeholder Interviews
+
+-   Surveys
+
+-   Journey Mapping
+
+-   User Flows
+
+-   Sitemap
+
+-   Wireframing
+
+-   Usability Testing
+
+-   Database Development
+:::
+:::::
+
+## Challenge
+
+[BabyChildTeen\@NYU](https://www.babychildteenatnyu.com/), a group of developmental psychology research labs, needed to improve its study recruitment and participation database. The existing system was outdated, inefficient, and offered a poor user experience. Additionally, staff faced challenges with record sharing and assignment: participants eligible for multiple studies risked over-contact, and labs needed a way to coordinate assignments by eligibility criteria to manage records efficiently.
+
+## Project Goals
+
+-   **Improve UX:** Intuitive, easy-to-use interface for staff.
+
+-   **Streamline recruitment:** Reduce administrative burden and inefficiencies.
+
+-   **Coordinate assignments:** Avoid over-contact and maximize engagement.
+
+-   **Enhance data quality:** Standardize records for easy management and search.
+
+-   **Secure participant data:** Log user activity and implement access controls.
+
+## Team
+
+I was in an advantageous position for this project, having served as the administrator for the existing system. This gave me experience using the database from both admin and user perspectives. I also had insights from informal conversations with users about pain points and areas for improvement. When the decision was made to formally redesign the database, I collaborated closely with faculty, lab managers, research assistants, and IT specialists to re-imagine the participant management system.
+
+## Research & Discovery
+
+### Lab Profiles
+
+Each of the 8 labs in BabyChildTeen\@NYU consists of a faculty member overseeing a team of graduate students, research staff, and undergraduate research assistants. I conducted in-person interviews with all 8 faculty to understand their research programs and long-term goals. I also interviewed lab managers, who directly oversee and train research assistants, and collected data from lab members via a Qualtrics survey to capture broader staff perspectives. Using these insights, I developed a profile for each lab to guide design decisions and ensure the system met the needs of all users.
+
+**Journey Mapping:** Visualized current recruitment and participation processes to identify inefficiencies and opportunities.
