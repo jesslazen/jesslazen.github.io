@@ -243,7 +243,7 @@ header img {
 }
 
 #portfolio {
-  padding: 0 200px 60px 200px ; /* make 80px 200... when you remove banner */
+  padding: 80px 200px 60px 200px ; /* make 80px 200... when you remove banner */
   background-color: white;
   max-width: 830px; /* 3 cards * 250px + 2 gaps * 20px */
   margin: 0 auto;
