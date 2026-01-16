@@ -7,7 +7,7 @@ format:
     toc: true
     toc-location: left
     smooth-scroll: true
-
+    
 freeze: auto
 
 editor: visual

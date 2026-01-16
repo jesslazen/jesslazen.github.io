@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BabyChildTeen@NYU Recruitment Portal</title>
+<title>BabyChildTeen@NYU Participant Management System</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,6 +35,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="uxr_report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="uxr_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="uxr_report_files/libs/bootstrap/bootstrap-87ba040023ae3acdb36d5887c7da4cf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="uxr_report_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="uxr_report_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="uxr_report_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <style>html{ scroll-behavior: smooth; }</style>
 
 
@@ -45,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">BabyChildTeen@NYU Recruitment Portal</h1>
+      <h1 class="title">BabyChildTeen@NYU Participant Management System</h1>
                       </div>
   </div>
     
@@ -65,11 +68,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#challenge" id="toc-challenge" class="nav-link active" data-scroll-target="#challenge">Challenge</a></li>
-  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
+  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals">Research Goals</a></li>
   <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
   <li><a href="#research-discovery" id="toc-research-discovery" class="nav-link" data-scroll-target="#research-discovery">Research &amp; Discovery</a>
   <ul class="collapse">
   <li><a href="#lab-profiles" id="toc-lab-profiles" class="nav-link" data-scroll-target="#lab-profiles">Lab Profiles</a></li>
+  <li><a href="#user-flow-analysis" id="toc-user-flow-analysis" class="nav-link" data-scroll-target="#user-flow-analysis">User Flow Analysis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -84,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 #TOC {
-  background: url("logo.png");
+  background: url("assets/logo.png");
   background-size: 80%;
   padding-top: 200px !important;
   background-repeat: no-repeat;
@@ -98,17 +102,18 @@ ul.task-list li input[type="checkbox"] {
 <p>Research and Development Lead</p>
 <p><strong>Tools</strong></p>
 <ul>
-<li><p>Qualtrics</p></li>
 <li><p>Figma</p></li>
-<li><p>REDCap</p></li>
+<li><p>Qualtrics</p></li>
+<li><p>MySQL</p></li>
+<li><p>R</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Methods</strong></p>
 <ul>
 <li><p>User and Stakeholder Interviews</p></li>
 <li><p>Surveys</p></li>
-<li><p>Journey Mapping</p></li>
-<li><p>User Flows</p></li>
+<li><p>Contextual inquiry</p></li>
+<li><p>User Flow Mapping</p></li>
 <li><p>Sitemap</p></li>
 <li><p>Wireframing</p></li>
 <li><p>Usability Testing</p></li>
@@ -120,8 +125,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="challenge">Challenge</h2>
 <p><a href="https://www.babychildteenatnyu.com/">BabyChildTeen@NYU</a>, a group of developmental psychology research labs, needed to improve its study recruitment and participation database. The existing system was outdated, inefficient, and offered a poor user experience. Additionally, staff faced challenges with record sharing and assignment: participants eligible for multiple studies risked over-contact, and labs needed a way to coordinate assignments by eligibility criteria to manage records efficiently.</p>
 </section>
-<section id="project-goals" class="level2">
-<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<section id="research-goals" class="level2">
+<h2 class="anchored" data-anchor-id="research-goals">Research Goals</h2>
 <ul>
 <li><p><strong>Improve UX:</strong> Intuitive, easy-to-use interface for staff.</p></li>
 <li><p><strong>Streamline recruitment:</strong> Reduce administrative burden and inefficiencies.</p></li>
@@ -132,14 +137,55 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="team" class="level2">
 <h2 class="anchored" data-anchor-id="team">Team</h2>
-<p>I was in an advantageous position for this project, having served as the administrator for the existing system. This gave me experience using the database from both admin and user perspectives. I also had insights from informal conversations with users about pain points and areas for improvement. When the decision was made to formally redesign the database, I collaborated closely with faculty, lab managers, research assistants, and IT specialists to reimagine the recruitment portal.</p>
+<p>I was in an advantageous position for this project, having served as the administrator for the existing system. This gave me experience using the database from both admin and user perspectives. I also had insights from informal conversations with users about pain points and areas for improvement. When the decision was made to formally redesign the database, I collaborated closely with faculty, lab managers, research assistants, and IT specialists to re-imagine the participant management system.</p>
 </section>
 <section id="research-discovery" class="level2">
 <h2 class="anchored" data-anchor-id="research-discovery">Research &amp; Discovery</h2>
 <section id="lab-profiles" class="level3">
 <h3 class="anchored" data-anchor-id="lab-profiles">Lab Profiles</h3>
-<p>Each of the 8 labs in BabyChildTeen@NYU consists of a faculty member overseeing a team of graduate students, research staff, and undergraduate research assistants. I conducted in-person interviews with all 8 faculty to understand their research programs and long-term goals. I also interviewed lab managers, who directly oversee and train research assistants, and collected data from lab members via a Qualtrics survey to capture broader staff perspectives. Using these insights, I developed a profile for each lab to guide design decisions and ensure the system met the needs of all users.</p>
-<p><strong>Journey Mapping:</strong> Visualized current recruitment and participation processes to identify inefficiencies and opportunities.</p>
+<section id="context" class="level4">
+<h4 class="anchored" data-anchor-id="context"><strong>Context</strong></h4>
+<p>Each of the 8 labs in BabyChildTeen@NYU consists of a faculty member overseeing a team of graduate students, research staff, and undergraduate research assistants. While all labs rely on the shared recruitment system, they differ in research focus, study volume, recruitment frequency, and day-to-day workflows—resulting in distinct needs and constraints across teams.</p>
+</section>
+<section id="methods" class="level4">
+<h4 class="anchored" data-anchor-id="methods"><strong>Methods</strong></h4>
+<p>I conducted <strong>in-person interviews</strong> with all 8 faculty to understand their research programs and long-term goals. I also interviewed lab managers, who directly oversee and train research assistants, and collected data from lab members via a <strong>Qualtrics survey</strong> to capture broader staff perspectives.</p>
+</section>
+<section id="objective" class="level4">
+<h4 class="anchored" data-anchor-id="objective"><strong>Objective</strong></h4>
+<p>Synthesize insights from interviews and survey data into comprehensive lab profiles to guide system design and support user needs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/synthesis.png" class="img-fluid figure-img" alt="Top: Illustration of faculty interview guide and lab user survey used to gather feedback on recruitment workflows and system needs. Bottom: Sample lab persona illustrating goals, pain points, and key metrics to inform the participant database redesign."></p>
+<figcaption>Sample lab persona illustrating goals, pain points, and key metrics to inform the participant database redesign.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="user-flow-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="user-flow-analysis">User Flow Analysis</h3>
+<section id="context-1" class="level4">
+<h4 class="anchored" data-anchor-id="context-1"><strong>Context</strong></h4>
+<p>BabyChildTeen@NYU relies on a legacy recruitment database originally built over 20 years ago by a single lab. At the time, the system was not designed for online research or cross-lab use. Over time, it was adopted by multiple labs with very different study formats, recruitment volumes, and workflows. As a result, labs now use the same system in fundamentally different ways, requiring significant oversight from a central administrator to coordinate access and prevent conflicts.</p>
+<p>Online-focused labs primarily conduct large-scale email outreach to families nationwide, while in-person labs rely on long-term relationships with local families and conduct most recruitment via phone calls. These divergent workflows place increasing strain on a system that was never designed to support multiple recruitment models simultaneously. New staff require extensive training to navigate the system, and even experienced users rely on memory and manual cross-checking to complete routine tasks.</p>
+</section>
+<section id="methods-1" class="level4">
+<h4 class="anchored" data-anchor-id="methods-1"><strong>Methods</strong></h4>
+<p>I conducted <strong>think-aloud contextual inquiry sessions</strong> with lab managers and research staff as they completed recruitment tasks in the system. Participants verbalized their thought process while searching for participants, checking eligibility, contacting families, scheduling appointments, and closing out studies.</p>
+<p>To complement live observation, I reviewed existing training materials and onboarding documentation to understand how new staff are taught to use the system—and where informal knowledge fills gaps. These combined methods allowed me to capture both <em>intended</em> workflows and <em>actual</em> day-to-day practices, including workarounds and edge cases.</p>
+</section>
+<section id="objective-1" class="level4">
+<h4 class="anchored" data-anchor-id="objective-1"><strong>Objective</strong></h4>
+<p>My goal was to surface mismatches between the system’s original design assumptions and current lab needs, identify high-friction moments, and uncover opportunities to support both in-person and remote research workflows. These insights informed the redesign strategy and ensured it served <em>all</em> labs—not just the original system owners.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/legacy_user_flow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Legacy BabyChildTeen@NYU recruitment system user flow, illustrating the tedious, multi-step processes required to contact families, determine eligibility, schedule, and manage appointments across labs. Click on flowchart to zoom and explore workflows."><img src="assets/legacy_user_flow.png" class="img-fluid figure-img" alt="A detailed flowchart showing the legacy BabyChildTeen@NYU recruitment system user flow."></a></p>
+<figcaption>Legacy BabyChildTeen@NYU recruitment system user flow, illustrating the tedious, multi-step processes required to contact families, determine eligibility, schedule, and manage appointments across labs. Click on flowchart to zoom and explore workflows.</figcaption>
+</figure>
+</div>
+<hr>
+<p>Please note this write up us a work in progress. Last update: 1/15/26</p>
+</section>
 </section>
 </section>
 
@@ -545,6 +591,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
