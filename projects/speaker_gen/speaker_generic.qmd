@@ -1,5 +1,5 @@
 ---
-title: "Speaker Knowledge Modulates the Effects of Generic vs. Specific Language"
+title: "Experimental Design & Data Analysis: Modeling the Impact of Speaker Knowledge on Essentialist Belief Formation"
 format:
   html:
     toc: true
@@ -40,13 +40,13 @@ format:
 ::: {.column width="27%"}
 **Links:**
 
-[📄](jesslazen.github.io/assets/speaker_knowledge.pdf) View Paper (PDF)
+[📄](assets/speaker_knowledge.pdf) View Paper (PDF)
 
-[🖼](jesslazen.github.io/assets/cogsci_poster.pdf) View Poster (PDF)
+[🖼](/assets/cogsci_poster.pdf) View Poster (PDF)
 :::
 ::::::
 
-**Source:** Stephenson, J., Moran, M. E., Leslie, S., & Rhodes, M. (2025). [Speaker knowledge modulates the effects of generic language on essentialist beliefs](https://escholarship.org/uc/item/5fh0s9cb?utm_source=chatgpt.com). *Proceedings of the Annual Meeting of the Cognitive Science Society, 47*.
+**Source:** Stephenson, J., Moran, M. E., Leslie, S., & Rhodes, M. (2025). [Speaker knowledge modulates the effects of generic language on essentialist beliefs](https://escholarship.org/uc/item/5fh0s9cb). *Proceedings of the Annual Meeting of the Cognitive Science Society, 47*.
 
 ## **Background**
 
