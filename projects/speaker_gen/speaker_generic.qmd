@@ -10,6 +10,17 @@ format:
     title-block-banner: true
 ---
 
+```{=html}
+<style>
+#TOC {
+  background: url("assets/generic_img.png");
+  background-size: 80%;
+  padding-top: 200px !important;
+  background-repeat: no-repeat;
+}
+</style>
+```
+
 :::::: columns
 ::: {.column width="33%"}
 **Methods**
@@ -42,11 +53,11 @@ format:
 
 [📄](assets/speaker_knowledge.pdf) View Paper (PDF)
 
-[🖼](/assets/cogsci_poster.pdf) View Poster (PDF)
+[🖼](assets/cogsci_poster.pdf) View Poster (PDF)
 :::
 ::::::
 
-**Source:** Stephenson, J., Moran, M. E., Leslie, S., & Rhodes, M. (2025). [Speaker knowledge modulates the effects of generic language on essentialist beliefs](https://escholarship.org/uc/item/5fh0s9cb). *Proceedings of the Annual Meeting of the Cognitive Science Society, 47*.
+**Source:** Stephenson [Lazen], J., Moran, M. E., Leslie, S., & Rhodes, M. (2025). [Speaker knowledge modulates the effects of generic language on essentialist beliefs](https://escholarship.org/uc/item/5fh0s9cb). *Proceedings of the Annual Meeting of the Cognitive Science Society, 47*.
 
 ## **Background**
 
