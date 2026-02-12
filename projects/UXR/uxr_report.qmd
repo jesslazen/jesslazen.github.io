@@ -49,7 +49,7 @@ Research and Development Lead
 
 -   Surveys
 
--   Contextual inquiry
+-   Contextual Inquiry
 
 -   User Flow Mapping
 
@@ -123,4 +123,4 @@ My goal was to surface mismatches between the system’s original design assumpt
 
 ------------------------------------------------------------------------
 
-Please note this write up is a work in progress. Last update: 1/15/26
+Please note this project is a work in project. Last updated 1/13/2026.
