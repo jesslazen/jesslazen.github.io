@@ -8,6 +8,7 @@ format:
     smooth-scroll: true
     embed-resources: false
     title-block-banner: true
+    theme: ../theme.scss
 ---
 
 ```{=html}
