@@ -2,7 +2,7 @@
 title: "Creative Portfolio"
 format:
   html:
-    toc: true
+    toc: false
     toc-depth: 3
     number-sections: false
     smooth-scroll: true
@@ -19,11 +19,107 @@ format:
   padding-top: 200px !important;
   background-repeat: no-repeat;
 }
+
+.browser-preview {
+  margin: 2rem 0 0;
+  border: 1px solid #d7dde2;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f7f3ed;
+  box-shadow: 0 24px 60px rgba(32, 41, 48, 0.16);
+}
+
+.browser-preview__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(180deg, #fbfaf8 0%, #efe7df 100%);
+  border-bottom: 1px solid #d7dde2;
+}
+
+.browser-preview__dots {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.browser-preview__dots span {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.browser-preview__dots span:nth-child(1) {
+  background: #ff8d7a;
+}
+
+.browser-preview__dots span:nth-child(2) {
+  background: #f5c76a;
+}
+
+.browser-preview__dots span:nth-child(3) {
+  background: #88c7a3;
+}
+
+.browser-preview__address {
+  flex: 1;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd5cd;
+  color: #55626d;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.browser-preview__viewport {
+  height: min(70vh, 900px);
+  overflow-y: auto;
+  background: #f2ede7;
+}
+
+.browser-preview__viewport img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.browser-preview__caption {
+  margin-top: 0.85rem;
+  color: #55626d;
+  font-size: 0.95rem;
+}
 </style>
 ```
 
-Congrats! You've made it to the most exciting part of my website: my creative work! This page is a collection of projects I've worked on that are more design focused. Some of them are personal projects, while others are pieces of larger professional and acedemic work I cant help but add a creative touch too.
+
+Congrats! You've made it to the most exciting part of my website: my creative work! This page will be a collection of projects I've worked on that are more design focused. Some of them are personal projects, while others are pieces of larger professional and academic work I can't help but add a creative touch too.
+
 
 ### Web Design
 
 My first experience with web design was learning HTML to personalize my Tumblr blog in middle school (no I won't be sharing that). While I have no plans to share that (embarrassing), I have continued to develop my web design skills in various projects, including building this website hosted on Github Pages! I typically use a combination of R Quarto, Shiny, HTML, CSS, and JavaScript. I also have experience building sites with WordPress and Squarespace.
+
+```{=html}
+<div class="browser-preview">
+  <div class="browser-preview__bar">
+    <div class="browser-preview__dots" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="browser-preview__address">babychildteenatnyu.com</div>
+  </div>
+  <div class="browser-preview__viewport">
+    <img src="assets/bct-website.png" alt="Scrollable preview of the BabyChildTeen@NYU website design.">
+  </div>
+</div>
+<p class="browser-preview__caption">A preview of the BabyChildTeen@NYU website built on Squarespace.</p>
+```
+</details>
+
