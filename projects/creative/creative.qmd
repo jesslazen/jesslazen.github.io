@@ -1,0 +1,16 @@
+---
+title: "Creative Work"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    smooth-scroll: true
+    embed-resources: false
+    title-block-banner: true
+---
+
+Congrats! You've made it to the most exciting part of my website: my creative work! This page is a collection of projects I've worked on that are more design focused. Some of them are personal projects, while others are pieces of larger professional and acedemic work I cant help but add a creative touch too.
+
+### Web Design
+My first experience with web design was learning HTML to personalize my Tumblr blog in middle school (no I won't be sharing that). While I have no plans to share that (embarrassing), I have continued to develop my web design skills in various projects, including building this website! I typically use a combination of R Quarto, Shiny, HTML, CSS, and JavaScript. I also have experience building sites with WordPress and Squarespace.
