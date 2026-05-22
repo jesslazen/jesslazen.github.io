@@ -1,2 +1,4 @@
-.Rhistory
-/.quarto/
+**/_freeze/
+**/.quarto/
+.DS_Store
+*.Rhistory
