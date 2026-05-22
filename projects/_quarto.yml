@@ -8,6 +8,6 @@ format:
     toc-location: left
     smooth-scroll: true
     
-freeze: false
+freeze: auto
 
 editor: visual
