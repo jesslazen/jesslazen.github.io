@@ -1,5 +1,6 @@
 ---
-title: "BabyChildTeen@NYU Participant Management System"
+title: "End-to-End Product Development"
+subtitle: "BCT Participant System"
 format:
   html:
     toc: true
@@ -14,59 +15,59 @@ format:
 ```{=html}
 <style>
 #TOC {
-  background: url("assets/logo.png");
-  background-size: 80%;
+  background-color: var(--portfolio-surface);
+  background-image: url("assets/logo.png");
+  background-size: 75%;
+  background-position: center 1rem;
   padding-top: 200px !important;
   background-repeat: no-repeat;
+}
+
+main.content > section.level1 > h1 {
+  margin: 2.5rem 0 1.25rem;
+  padding: 0.8rem 1rem 0.9rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eef4f5 0%, #f5efe8 100%);
+  box-shadow: var(--portfolio-shadow);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 </style>
 ```
 
-::::: columns
-::: {.column width="50%"}
-**Client**
+## Background
 
-[BabyChildTeen\@NYU](https://www.babychildteenatnyu.com/)
+BabyChildTeen\@NYU is a consortium of developmental psychology labs at NYU studying cognitive and social development across infancy, childhood, and adolescence. Recruiting participants for this kind of research is logistically complex. Families must be contacted repeatedly over months or years as children age into eligibility for new studies, and coordination across labs is essential to avoid over-contacting the same families or losing track of participation history.
 
-**Role**
+For nearly two decades, the BCT relied on a recruitment database originally built by a single lab that grew into a shared system used by seven labs with fundamentally different workflows. It was never designed for this scale, and the strain showed: routine tasks required manual cross-checking, new staff needed extensive training, and a central administrator was needed to manage access and prevent conflicts.
 
-Research and Development Lead
+This project was a ground-up redesign— not just of the database, but of the entire participant management workflow— with the goal of building something that could serve all labs reliably, securely, and at scale. I led this work as UX Research and Product Development Lead, drawing on my prior experience administering the legacy system and collaborating closely with faculty, lab managers, research assistants, and IT specialists to rebuild it.
 
-**Tools**
+```{=html}
+<div class="portfolio-jump-callout">
+  <p class="portfolio-jump-callout__label">This project touched a lot of ground— jump to what's most relevant to you:</p>
+  <div class="portfolio-jump-callout__links">
+    <a href="#ux-research-design">UX Research &amp; Design</a>
+    <a href="#data-systems">Data &amp; Systems</a>
+    <a href="#engineering-infrastructure">Engineering &amp; Infrastructure</a>
+  </div>
+</div>
+```
 
--   Figma
+# UX Research & Design
 
--   Qualtrics
+## Methods & Tools
 
--   MySQL
+-   Stakeholder interviews (faculty, lab managers, research assistants)
+-   Survey design and administration (Qualtrics)
+-   Think-aloud contextual inquiry sessions
+-   User flow analysis and legacy system audit
+-   Lab persona synthesis
+-   Training material and onboarding documentation review
 
--   R
-:::
-
-::: {.column width="50%"}
-**Methods**
-
--   User and Stakeholder Interviews
-
--   Surveys
-
--   Contextual Inquiry
-
--   User Flow Mapping
-
--   Sitemap
-
--   Wireframing
-
--   Usability Testing
-
--   Database Development
-:::
-:::::
-
-## Challenge
-
-[BabyChildTeen\@NYU](https://www.babychildteenatnyu.com/), a group of developmental psychology research labs, needed to improve its study recruitment and participation database. The existing system was outdated, inefficient, and offered a poor user experience. Additionally, staff faced challenges with record sharing and assignment: participants eligible for multiple studies risked over-contact, and labs needed a way to coordinate assignments by eligibility criteria to manage records efficiently.
 
 ## Research Goals
 
@@ -79,10 +80,6 @@ Research and Development Lead
 -   **Enhance data quality:** Standardize records for easy management and search.
 
 -   **Secure participant data:** Log user activity and implement access controls.
-
-## Team
-
-I was in an advantageous position for this project, having served as the administrator for the existing system. This gave me experience using the database from both admin and user perspectives. I also had insights from informal conversations with users about pain points and areas for improvement. When the decision was made to formally redesign the database, I collaborated closely with faculty, lab managers, research assistants, and IT specialists to re-imagine the participant management system.
 
 ## Research & Discovery
 
@@ -122,6 +119,26 @@ My goal was to surface mismatches between the system’s original design assumpt
 
 ![Legacy BabyChildTeen\@NYU recruitment system user flow, illustrating the tedious, multi-step processes required to contact families, determine eligibility, schedule, and manage appointments across labs. Click on flowchart to zoom and explore workflows.](assets/legacy_user_flow.png){.lightbox fig-alt="A detailed flowchart showing the legacy BabyChildTeen@NYU recruitment system user flow."}
 
+# Data & Systems
+
+## Methods & Tools 
+
+-   Relational database design (PostgreSQL)
+-   Data pipeline development and maintenance
+-   Schema modeling for multi-user production use
+-   Data governance and access control protocols
+-   Automated reporting infrastructure
+
+# Engineering & Infrastructure
+
+## Methods & Tools
+
+-   R Shiny web application development
+-   AWS infrastructure (EC2, RDS, Secrets Manager, CloudWatch)
+-   HTTPS configuration (ACM certificate, Application Load Balancer)
+-   Docker containerization via ShinyProxy
+-   SSO integration (NYU Microsoft Entra ID / OIDC)
+
 ------------------------------------------------------------------------
 
-Please note this project is a work in project. Last updated 1/13/2026.
+Please note this project documentation is a work in project. Last updated 5/22/2026.

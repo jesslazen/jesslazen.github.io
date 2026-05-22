@@ -1,5 +1,6 @@
 ---
-title: "Experimental Design & Data Analysis: Modeling the Impact of Speaker Knowledge on Essentialist Belief Formation"
+title: "Experimental Design & Data Analysis"
+subtitle: "Modeling the Impact of Speaker Knowledge on Essentialist Belief Formation"
 format:
   html:
     toc: true
@@ -14,8 +15,10 @@ format:
 ```{=html}
 <style>
 #TOC {
-  background: url("assets/generic_img.png");
+  background-color: var(--portfolio-surface);
+  background-image: url("assets/generic_img.png");
   background-size: 80%;
+  background-position: center 1.6rem;
   padding-top: 200px !important;
   background-repeat: no-repeat;
 }
@@ -27,25 +30,17 @@ format:
 **Methods**
 
 -   Experimental Design
-
 -   Survey Development
-
 -   Multi-Level Modeling
-
 -   Data Visualization
 
--   Manuscript Preparation
-
--   Reproducible Workflows
 :::
 
 ::: {.column width="40%"}
 **Tools:**
 
 -   R (tidyverse, lme4, ggplot2)
-
 -   Quarto
-
 -   Adobe InDesign
 :::
 

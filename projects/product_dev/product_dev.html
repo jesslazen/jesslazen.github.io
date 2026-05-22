@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BabyChildTeen@NYU Participant Management System</title>
+<title>End-to-End Product Development</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="uxr_report_files/libs/clipboard/clipboard.min.js"></script>
-<script src="uxr_report_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="uxr_report_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="uxr_report_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="uxr_report_files/libs/quarto-html/popper.min.js"></script>
-<script src="uxr_report_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="uxr_report_files/libs/quarto-html/anchor.min.js"></script>
-<link href="uxr_report_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="uxr_report_files/libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="uxr_report_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="uxr_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="uxr_report_files/libs/bootstrap/bootstrap-87ba040023ae3acdb36d5887c7da4cf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="uxr_report_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="uxr_report_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="uxr_report_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="product_dev_files/libs/clipboard/clipboard.min.js"></script>
+<script src="product_dev_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="product_dev_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="product_dev_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="product_dev_files/libs/quarto-html/popper.min.js"></script>
+<script src="product_dev_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="product_dev_files/libs/quarto-html/anchor.min.js"></script>
+<link href="product_dev_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="product_dev_files/libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="product_dev_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="product_dev_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="product_dev_files/libs/bootstrap/bootstrap-34190a769029a0993531a6f79a3841ab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="product_dev_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="product_dev_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="product_dev_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <style>html{ scroll-behavior: smooth; }</style>
 
 
@@ -48,7 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">BabyChildTeen@NYU Participant Management System</h1>
+      <h1 class="title">End-to-End Product Development</h1>
+            <p class="subtitle lead">BCT Participant System</p>
                       </div>
   </div>
     
@@ -67,13 +68,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#challenge" id="toc-challenge" class="nav-link active" data-scroll-target="#challenge">Challenge</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#ux-research-design" id="toc-ux-research-design" class="nav-link" data-scroll-target="#ux-research-design">UX Research &amp; Design</a>
+  <ul class="collapse">
+  <li><a href="#methods-tools" id="toc-methods-tools" class="nav-link" data-scroll-target="#methods-tools">Methods &amp; Tools</a></li>
   <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals">Research Goals</a></li>
-  <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
   <li><a href="#research-discovery" id="toc-research-discovery" class="nav-link" data-scroll-target="#research-discovery">Research &amp; Discovery</a>
   <ul class="collapse">
   <li><a href="#lab-profiles" id="toc-lab-profiles" class="nav-link" data-scroll-target="#lab-profiles">Lab Profiles</a></li>
   <li><a href="#user-flow-analysis" id="toc-user-flow-analysis" class="nav-link" data-scroll-target="#user-flow-analysis">User Flow Analysis</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#data-systems" id="toc-data-systems" class="nav-link" data-scroll-target="#data-systems">Data &amp; Systems</a>
+  <ul class="collapse">
+  <li><a href="#methods-tools-1" id="toc-methods-tools-1" class="nav-link" data-scroll-target="#methods-tools-1">Methods &amp; Tools</a></li>
+  </ul></li>
+  <li><a href="#engineering-infrastructure" id="toc-engineering-infrastructure" class="nav-link" data-scroll-target="#engineering-infrastructure">Engineering &amp; Infrastructure</a>
+  <ul class="collapse">
+  <li><a href="#methods-tools-2" id="toc-methods-tools-2" class="nav-link" data-scroll-target="#methods-tools-2">Methods &amp; Tools</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -88,42 +100,53 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 #TOC {
-  background: url("assets/logo.png");
-  background-size: 80%;
+  background-color: var(--portfolio-surface);
+  background-image: url("assets/logo.png");
+  background-size: 75%;
+  background-position: center 1rem;
   padding-top: 200px !important;
   background-repeat: no-repeat;
 }
+
+main.content > section.level1 > h1 {
+  margin: 2.5rem 0 1.25rem;
+  padding: 0.8rem 1rem 0.9rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eef4f5 0%, #f5efe8 100%);
+  box-shadow: var(--portfolio-shadow);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
 </style>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Client</strong></p>
-<p><a href="https://www.babychildteenatnyu.com/">BabyChildTeen@NYU</a></p>
-<p><strong>Role</strong></p>
-<p>Research and Development Lead</p>
-<p><strong>Tools</strong></p>
-<ul>
-<li><p>Figma</p></li>
-<li><p>Qualtrics</p></li>
-<li><p>MySQL</p></li>
-<li><p>R</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Methods</strong></p>
-<ul>
-<li><p>User and Stakeholder Interviews</p></li>
-<li><p>Surveys</p></li>
-<li><p>Contextual Inquiry</p></li>
-<li><p>User Flow Mapping</p></li>
-<li><p>Sitemap</p></li>
-<li><p>Wireframing</p></li>
-<li><p>Usability Testing</p></li>
-<li><p>Database Development</p></li>
-</ul>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>BabyChildTeen@NYU is a consortium of developmental psychology labs at NYU studying cognitive and social development across infancy, childhood, and adolescence. Recruiting participants for this kind of research is logistically complex. Families must be contacted repeatedly over months or years as children age into eligibility for new studies, and coordination across labs is essential to avoid over-contacting the same families or losing track of participation history.</p>
+<p>For nearly two decades, the BCT relied on a recruitment database originally built by a single lab that grew into a shared system used by seven labs with fundamentally different workflows. It was never designed for this scale, and the strain showed: routine tasks required manual cross-checking, new staff needed extensive training, and a central administrator was needed to manage access and prevent conflicts.</p>
+<p>This project was a ground-up redesign— not just of the database, but of the entire participant management workflow— with the goal of building something that could serve all labs reliably, securely, and at scale. I led this work as UX Research and Product Development Lead, drawing on my prior experience administering the legacy system and collaborating closely with faculty, lab managers, research assistants, and IT specialists to rebuild it.</p>
+<div class="portfolio-jump-callout">
+  <p class="portfolio-jump-callout__label">This project touched a lot of ground— jump to what's most relevant to you:</p>
+  <div class="portfolio-jump-callout__links">
+    <a href="#ux-research-design">UX Research &amp; Design</a>
+    <a href="#data-systems">Data &amp; Systems</a>
+    <a href="#engineering-infrastructure">Engineering &amp; Infrastructure</a>
+  </div>
 </div>
-</div>
-<section id="challenge" class="level2">
-<h2 class="anchored" data-anchor-id="challenge">Challenge</h2>
-<p><a href="https://www.babychildteenatnyu.com/">BabyChildTeen@NYU</a>, a group of developmental psychology research labs, needed to improve its study recruitment and participation database. The existing system was outdated, inefficient, and offered a poor user experience. Additionally, staff faced challenges with record sharing and assignment: participants eligible for multiple studies risked over-contact, and labs needed a way to coordinate assignments by eligibility criteria to manage records efficiently.</p>
+</section>
+<section id="ux-research-design" class="level1">
+<h1>UX Research &amp; Design</h1>
+<section id="methods-tools" class="level2">
+<h2 class="anchored" data-anchor-id="methods-tools">Methods &amp; Tools</h2>
+<ul>
+<li>Stakeholder interviews (faculty, lab managers, research assistants)</li>
+<li>Survey design and administration (Qualtrics)</li>
+<li>Think-aloud contextual inquiry sessions</li>
+<li>User flow analysis and legacy system audit</li>
+<li>Lab persona synthesis</li>
+<li>Training material and onboarding documentation review</li>
+</ul>
 </section>
 <section id="research-goals" class="level2">
 <h2 class="anchored" data-anchor-id="research-goals">Research Goals</h2>
@@ -134,10 +157,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Enhance data quality:</strong> Standardize records for easy management and search.</p></li>
 <li><p><strong>Secure participant data:</strong> Log user activity and implement access controls.</p></li>
 </ul>
-</section>
-<section id="team" class="level2">
-<h2 class="anchored" data-anchor-id="team">Team</h2>
-<p>I was in an advantageous position for this project, having served as the administrator for the existing system. This gave me experience using the database from both admin and user perspectives. I also had insights from informal conversations with users about pain points and areas for improvement. When the decision was made to formally redesign the database, I collaborated closely with faculty, lab managers, research assistants, and IT specialists to re-imagine the participant management system.</p>
 </section>
 <section id="research-discovery" class="level2">
 <h2 class="anchored" data-anchor-id="research-discovery">Research &amp; Discovery</h2>
@@ -183,8 +202,36 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Legacy BabyChildTeen@NYU recruitment system user flow, illustrating the tedious, multi-step processes required to contact families, determine eligibility, schedule, and manage appointments across labs. Click on flowchart to zoom and explore workflows.</figcaption>
 </figure>
 </div>
-<hr>
 </section>
+</section>
+</section>
+</section>
+<section id="data-systems" class="level1">
+<h1>Data &amp; Systems</h1>
+<section id="methods-tools-1" class="level2">
+<h2 class="anchored" data-anchor-id="methods-tools-1">Methods &amp; Tools</h2>
+<ul>
+<li>Relational database design (PostgreSQL)</li>
+<li>Data pipeline development and maintenance</li>
+<li>Schema modeling for multi-user production use</li>
+<li>Data governance and access control protocols</li>
+<li>Automated reporting infrastructure</li>
+</ul>
+</section>
+</section>
+<section id="engineering-infrastructure" class="level1">
+<h1>Engineering &amp; Infrastructure</h1>
+<section id="methods-tools-2" class="level2">
+<h2 class="anchored" data-anchor-id="methods-tools-2">Methods &amp; Tools</h2>
+<ul>
+<li>R Shiny web application development</li>
+<li>AWS infrastructure (EC2, RDS, Secrets Manager, CloudWatch)</li>
+<li>HTTPS configuration (ACM certificate, Application Load Balancer)</li>
+<li>Docker containerization via ShinyProxy</li>
+<li>SSO integration (NYU Microsoft Entra ID / OIDC)</li>
+</ul>
+<hr>
+<p>Please note this project is a work in project. Last updated 5/22/2026.</p>
 </section>
 </section>
 
@@ -626,5 +673,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="uxr_report_files/libs/quarto-html/zenscroll-min.js"></script>
+<script src="product_dev_files/libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

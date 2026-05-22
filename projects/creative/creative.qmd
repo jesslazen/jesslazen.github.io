@@ -16,6 +16,7 @@ format:
 #TOC {
   background: url("assets/generic_img.png");
   background-size: 80%;
+  background-position: center 1rem;
   padding-top: 200px !important;
   background-repeat: no-repeat;
 }
@@ -94,6 +95,7 @@ format:
   color: #55626d;
   font-size: 0.95rem;
 }
+
 </style>
 ```
 
@@ -121,5 +123,3 @@ My first experience with web design was learning HTML to personalize my Tumblr b
 </div>
 <p class="browser-preview__caption">A preview of the BabyChildTeen@NYU website built on Squarespace.</p>
 ```
-</details>
-
