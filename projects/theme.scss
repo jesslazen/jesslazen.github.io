@@ -226,3 +226,112 @@ figcaption {
   color: var(--portfolio-muted);
   font-size: 0.95rem;
 }
+
+// creative ad image carousel
+
+.carousel-inner{
+  max-height: 90%;
+} 
+.carousel-img{
+  max-height: 60vh;
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(16%) saturate(1058%) hue-rotate(196deg) brightness(96%) contrast(89%);
+}
+
+.carousel-control-prev,{
+  transform: translate(-25%);
+}
+
+.carousel-control-next,{
+  transform: translate(25%);
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin-top: 17px;
+  margin-bottom: 0px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(16%) saturate(1058%) hue-rotate(196deg) brightness(96%) contrast(89%);
+}
+
+// Browser preview creative
+.browser-preview {
+  margin: 2rem 0 0;
+  border: 1px solid #d7dde2;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f7f3ed;
+  box-shadow: 0 24px 60px rgba(32, 41, 48, 0.16);
+}
+
+.browser-preview__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(180deg, #fbfaf8 0%, #efe7df 100%);
+  border-bottom: 1px solid #d7dde2;
+}
+
+.browser-preview__dots {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.browser-preview__dots span {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.browser-preview__dots span:nth-child(1) {
+  background: #ff8d7a;
+}
+
+.browser-preview__dots span:nth-child(2) {
+  background: #f5c76a;
+}
+
+.browser-preview__dots span:nth-child(3) {
+  background: #88c7a3;
+}
+
+.browser-preview__address {
+  flex: 1;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd5cd;
+  color: #55626d;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.browser-preview__viewport {
+  height: min(70vh, 900px);
+  overflow-y: auto;
+  background: #f2ede7;
+}
+
+.browser-preview__viewport img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.browser-preview__caption {
+  margin-top: 0.85rem;
+  color: #55626d;
+  font-size: 0.95rem;
+}
+

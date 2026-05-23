@@ -68,7 +68,6 @@ This project was a ground-up redesign— not just of the database, but of the en
 -   Lab persona synthesis
 -   Training material and onboarding documentation review
 
-
 ## Research Goals
 
 -   **Improve UX:** Intuitive, easy-to-use interface for staff.
@@ -121,7 +120,7 @@ My goal was to surface mismatches between the system’s original design assumpt
 
 # Data & Systems
 
-## Methods & Tools 
+## Methods & Tools
 
 -   Relational database design (PostgreSQL)
 -   Data pipeline development and maintenance
