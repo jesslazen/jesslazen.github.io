@@ -99,13 +99,13 @@ format:
 </style>
 ```
 
-
 Congrats! You've made it to the most exciting part of my website: my creative work! This page will be a collection of projects I've worked on that are more design focused. Some of them are personal projects, while others are pieces of larger professional and academic work I can't help but add a creative touch too.
-
 
 ### Web Design
 
-My first experience with web design was learning HTML to personalize my Tumblr blog in middle school (no I won't be sharing that). While I have no plans to share that (embarrassing), I have continued to develop my web design skills in various projects, including building this website hosted on Github Pages! I typically use a combination of R Quarto, Shiny, HTML, CSS, and JavaScript. I also have experience building sites with WordPress and Squarespace.
+My first experience with web design was learning HTML to personalize my Tumblr blog in middle school. While I have no plans to share that (embarrassing), I have continued to develop my web design skills in various projects, including building this website hosted on Github Pages. I typically use a combination of R Quarto, HTML, CSS, R Shiny, and JavaScript. I also have built sites using WordPress and Squarespace.
+
+Eventually, I'd love to build interactive, scrollable web-based visualization for data storytelling in the style of [The Pudding](https://pudding.cool/) and the [New York Times](https://www.nytimes.com/interactive/2025/12/22/us/2025-year-in-graphics.html). I am currently learning Svelte and D3.js, and I hope to be able to feature projects using those tools here soon.
 
 ```{=html}
 <div class="browser-preview">
