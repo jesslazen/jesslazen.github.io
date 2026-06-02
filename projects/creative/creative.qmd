@@ -114,3 +114,15 @@ Eventually, I'd love to build interactive, scrollable web-based visualization fo
 </div>
 <p class="browser-preview__caption">A preview of the BabyChildTeen@NYU website built on Squarespace.</p>
 ```
+
+## Crafty Projects
+
+#### Barn Quilts
+
+Lately, I’ve been really into fiber arts and folk motifs. This spring, after spending a lot of time working in my garden, I wanted to create something of my own to beautify the not-so-attractive fence around my yard. I decided to paint a series of barn quilts with a shared color scheme. They add a great pop of color to the space, and I love the homey feeling they bring to my urban garden.
+
+![](assets/barn-quilts.png){fig-alt="Three painted barn quilt designs next to each other" style="margin-bottom: 0; margin-top: 0;"}
+
+The project also felt like a way of connecting to my grandfather, a photographer and director who found joy later in life in creating vibrant geometric paintings. I loved those paintings as a kid, and I still remember the excitement of watching him pull away the blue painter’s tape to reveal the crisp lines underneath.
+
+![](assets/art-show.png){style="display: block; margin-top: 0; margin-left: auto; margin-right: auto;" fig-alt="Jess and her family at her grandfather's art show." width="368"}
